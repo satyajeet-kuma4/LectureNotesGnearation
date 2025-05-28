@@ -1,0 +1,72 @@
+---
+
+### ❓ Questions for Chunk 1
+1.  The notes mention that the success of Gaussian elimination depends on the properties of the coefficient matrix.  Can you elaborate on what constitutes a "problematic" matrix in this context, and what issues might arise during elimination with such a matrix (e.g., zero pivots)?
+
+2.  The lecture emphasizes the elegance of expressing Gaussian elimination using matrix operations.  Provide a specific example of how using matrix notation simplifies or clarifies a step in the forward elimination process compared to describing it solely in terms of equations.
+
+3.  Explain the relationship between the choice of pivot and the multipliers used during the forward elimination process.  How does selecting a different pivot affect the subsequent steps of the algorithm?
+
+4.  The notes briefly introduce matrix multiplication. How does the understanding of matrix multiplication contribute to a deeper understanding of the matrix representation of elimination, and what role does it play in expressing row operations?
+
+5.  Beyond simply identifying pivots, what strategies can be employed to improve numerical stability during Gaussian elimination, especially when dealing with matrices that might lead to problematic calculations due to very small or very large numbers?
+---
+
+---
+
+### ❓ Questions for Chunk 2
+1.  The lecture notes state that Gaussian elimination transforms matrix A into an upper triangular matrix U.  Can you explain why this transformation is crucial for solving systems of linear equations, and what makes an upper triangular matrix particularly well-suited for this purpose?  Relate this to the efficiency of back substitution.
+
+2.  The notes provide an example where a specific value in the matrix leads to complete failure (no third pivot).  Can you elaborate on how small changes in matrix elements can drastically affect the success or failure of Gaussian elimination, and what this implies about the sensitivity of the method to numerical errors?
+
+3.  The determinant of a matrix is described as the product of its pivots.  How does this definition relate to the geometric interpretation of the determinant (e.g., area scaling for 2x2 matrices, volume scaling for 3x3 matrices)?  What does it mean for the determinant to be zero in terms of the matrix’s properties and the solvability of corresponding linear systems?
+
+4.  The notes mention the importance of row exchanges to avoid zero pivots.  Could you explain the different strategies for choosing pivot rows (e.g., partial pivoting, full pivoting) and discuss their relative advantages and disadvantages in terms of numerical stability and computational cost?
+
+5.  The action items suggest exploring MATLAB's implementation of Gaussian elimination. What specific functionalities or commands within MATLAB would you use to perform Gaussian elimination, check for potential failures, and solve the resulting upper triangular system? How might this differ from a manual calculation and what advantages does a software implementation provide?
+
+---
+
+---
+
+### ❓ Questions for Chunk 3
+1.  Can you explain a situation where understanding matrix-vector multiplication as a linear combination of columns would be more advantageous than calculating the product element-wise?  Provide a specific example.
+
+2.  Construct the elimination matrix that would perform the row operation of adding five times row three to row one, and explain how this matrix achieves that specific row operation.
+
+3.  How does the concept of the identity matrix relate to the concept of the multiplicative identity in scalar arithmetic?  Discuss similarities and any crucial differences.
+
+4.  Explain why back substitution is an efficient method for solving triangular systems but wouldn't be suitable for solving general systems of linear equations. What are its limitations?
+
+5.  Given a 3x3 matrix A and a 3x1 vector x, you perform the multiplication Ax. If the resulting vector is all zeros (the zero vector), what can you conclude about the linear independence of the columns of A, and why?  What if Ax results in a non-zero vector?
+---
+
+---
+
+### ❓ Questions for Chunk 4
+1.  Explain the relationship between elementary matrices and Gaussian elimination.  How can the sequence of row operations in Gaussian elimination be expressed using matrix multiplication?  Provide a specific example.
+
+2.  The notes mention different methods for matrix multiplication (by columns, by rows, by entry).  Discuss the advantages and disadvantages of each method, and when one method might be preferred over another.
+
+3.  Beyond row swapping, what other types of elementary row operations are there, and how would their corresponding elementary matrices be constructed? Give examples of 3x3 matrices to illustrate.
+
+4.  The associative law states that (AB)C = A(BC).  Why is it *crucial* to maintain the original order of matrices A, B, and C despite being able to regroup with parentheses?  Illustrate with a counter-example showing why changing the order of matrices themselves invalidates the equality.
+
+5.  Using a 3x3 example, demonstrate how a permutation matrix can be used to rearrange the rows of a matrix.  Explain the structure of the permutation matrix and how it relates to the desired row rearrangement.
+
+---
+
+---
+
+### ❓ Questions for Chunk 5
+1.  Explain why the non-commutative nature of matrix multiplication (AB ≠ BA) is a significant property to understand in linear algebra, providing a real-world or practical example to illustrate its implications.
+
+2.  Demonstrate how to find the inverse of a 3x3 elementary matrix that represents swapping two rows, and explain the relationship between the original matrix and its inverse in terms of the row operation performed.
+
+3.  Given a 4x4 permutation matrix, explain how its structure reveals which row (or column) exchanges it performs and how to determine this intuitively without explicit calculation.
+
+4.  Using the concept of left and right multiplication, describe a scenario where you might apply matrix multiplication to manipulate both rows and columns of a matrix simultaneously to achieve a specific result, outlining the order of operations involved.
+
+5.  Provide a counterexample to show why the method for finding the inverse of an elementary matrix might not be directly applicable to finding the inverse of a general, non-elementary matrix.  Explain why the approach differs.
+---
+
