@@ -6,7 +6,7 @@ import google.generativeai as genai
 from textwrap import wrap
 
 # === CONFIGURATION ===
-GOOGLE_API_KEY = "AIzaSyB8e3Tr7yFdEQXrJiTZuydDL03QYnty8bE"
+GOOGLE_API_KEY = "key"
 output_dir = r'C:\Users\Satyajeet kumar\Desktop\Lecture_transcripts_genration'
 os.makedirs(output_dir, exist_ok=True)
 
